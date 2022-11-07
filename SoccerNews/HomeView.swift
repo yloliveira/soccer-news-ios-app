@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+  @State var selectedTeam = "vasco"
+  
   var body: some View {
-    List(posts) {
-      Text($0.title)
+    VStack {
+      Picker("Selecione o seu time", selection: $selectedTeam) {
+        Text("Botafogo").tag("botafogo")
+        Text("Flamengo").tag("flamengo")
+        Text("Fluminense").tag("fluminense")
+        Text("Vasco da Gama").tag("vasco")
+      }
+      List(posts) {
+        Text($0.title)
+      }
     }
   }
 }
