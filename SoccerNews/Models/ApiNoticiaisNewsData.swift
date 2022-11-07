@@ -6,6 +6,10 @@
 //
 
 struct ApiNoticiaisNewsData: Decodable {
+  let list: [ApiNoticiaisNewsDataItem]
+}
+
+struct ApiNoticiaisNewsDataItem: Decodable {
   let title: String
   let link: String
 }
