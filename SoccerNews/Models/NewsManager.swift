@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct NewsManager {
-  let httpClient = HttpClient()
-  let apiUrl = "https://apinoticias.tedk.com.br/api"
+class NewsManager: ObservableObject {
+  private let httpClient = HttpClient()
+  private let apiUrl = "https://apinoticias.tedk.com.br/api"
+  
+  @Published var news = [News]()
   
   func fetchNewsData(with term: String) {
     let dateFormatter = DateFormatter()
@@ -24,7 +26,9 @@ struct NewsManager {
       
       if let safeData = data {
         if let news = self.parseJSON(safeData) {
-          print(news.count)
+          DispatchQueue.main.async {
+            self.news = news
+          }
         }
       }
     }

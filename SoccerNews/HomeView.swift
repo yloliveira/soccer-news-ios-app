@@ -10,26 +10,37 @@ import SwiftUI
 struct HomeView: View {
   @State var selectedTeam = "vasco"
   
+  @ObservedObject var newsManager = NewsManager()
+  
   var body: some View {
-    VStack {
-      Picker("Selecione o seu time", selection: $selectedTeam) {
-        Text("Botafogo").tag("botafogo")
-        Text("Flamengo").tag("flamengo")
-        Text("Fluminense").tag("fluminense")
-        Text("Vasco da Gama").tag("vasco")
+    NavigationView {
+      VStack {
+        Picker("Selecione o seu time", selection: $selectedTeam) {
+          Text("Botafogo").tag("botafogo")
+          Text("Flamengo").tag("flamengo")
+          Text("Fluminense").tag("fluminense")
+          Text("Vasco da Gama").tag("vasco")
+        }
+        .onChange(of: selectedTeam, perform: self.onChangePickerValue)
+        List(newsManager.news) {
+          Text($0.title)
+        }
+        .navigationBarTitle("SOCCER NEWS")
       }
-      List(posts) {
-        Text($0.title)
-      }
-    }
+    }.onAppear(perform: fetchNewsData)
+  }
+  
+  private func onChangePickerValue(newValue: String) {
+    self.fetchNewsData()
+  }
+  
+  private func fetchNewsData() {
+    self.newsManager.fetchNewsData(with: self.selectedTeam)
   }
 }
 
-let posts = [
-  News(id: "1", title: "Subida no sufoco mostra que Vasco precisa de mais do que dinheiro", url: "link 1"),
-  News(id: "2", title: "Com acesso e dinheiro, Vasco destrava planejamento e vai ao mercado: \"Nova era começa hoje\"", url: "link 2"),
-  News(id: "3", title: "Vasco sobe com drama no lugar do protocolo", url: "link 3"),
-]
+
+//MARK: - HomeView_Previews
 
 struct HomeView_Previews: PreviewProvider {
   static var previews: some View {
