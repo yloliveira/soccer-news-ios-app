@@ -13,6 +13,7 @@
 		C4DDE8CC29195E6E00305B1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */; };
 		C4DDE8D6291963E700305B1A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8D5291963E700305B1A /* Post.swift */; };
 		C4DDE8D92919643A00305B1A /* ApiNoticiaisPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */; };
+		C4DDE8DB291967DD00305B1A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8DA291967DD00305B1A /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4DDE8D5291963E700305B1A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNoticiaisPostData.swift; sourceTree = "<group>"; };
+		C4DDE8DA291967DD00305B1A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				C4DDE8D5291963E700305B1A /* Post.swift */,
 				C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */,
+				C4DDE8DA291967DD00305B1A /* HttpClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DDE8DB291967DD00305B1A /* HttpClient.swift in Sources */,
 				C4DDE8D6291963E700305B1A /* Post.swift in Sources */,
 				C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */,
 				C4DDE8D92919643A00305B1A /* ApiNoticiaisPostData.swift in Sources */,
