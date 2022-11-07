@@ -5,7 +5,7 @@
 //  Created by Yan Oliveira on 07/11/22.
 //
 
-struct ApiNoticiaisPostData: Decodable {
+struct ApiNoticiaisNewsData: Decodable {
   let title: String
   let link: String
 }

@@ -5,7 +5,7 @@
 //  Created by Yan Oliveira on 07/11/22.
 //
 
-struct Post: Identifiable {
+struct News: Identifiable {
   let id: String
   let title: String
   let url: String
