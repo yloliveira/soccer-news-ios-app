@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4DDE8C529195E6800305B1A /* SoccerNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */; };
-		C4DDE8C729195E6800305B1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C629195E6800305B1A /* ContentView.swift */; };
+		C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C629195E6800305B1A /* HomeView.swift */; };
 		C4DDE8C929195E6E00305B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8C829195E6E00305B1A /* Assets.xcassets */; };
 		C4DDE8CC29195E6E00305B1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		C4DDE8C129195E6800305B1A /* SoccerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerNewsApp.swift; sourceTree = "<group>"; };
-		C4DDE8C629195E6800305B1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4DDE8C629195E6800305B1A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C4DDE8C829195E6E00305B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,8 @@
 		C4DDE8C329195E6800305B1A /* SoccerNews */ = {
 			isa = PBXGroup;
 			children = (
+				C4DDE8C629195E6800305B1A /* HomeView.swift */,
 				C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */,
-				C4DDE8C629195E6800305B1A /* ContentView.swift */,
 				C4DDE8C829195E6E00305B1A /* Assets.xcassets */,
 				C4DDE8CA29195E6E00305B1A /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DDE8C729195E6800305B1A /* ContentView.swift in Sources */,
+				C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */,
 				C4DDE8C529195E6800305B1A /* SoccerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
