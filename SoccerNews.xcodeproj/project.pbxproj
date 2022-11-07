@@ -11,6 +11,8 @@
 		C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C629195E6800305B1A /* HomeView.swift */; };
 		C4DDE8C929195E6E00305B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8C829195E6E00305B1A /* Assets.xcassets */; };
 		C4DDE8CC29195E6E00305B1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */; };
+		C4DDE8D6291963E700305B1A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8D5291963E700305B1A /* Post.swift */; };
+		C4DDE8D92919643A00305B1A /* ApiNoticiaisPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C4DDE8C629195E6800305B1A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C4DDE8C829195E6E00305B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4DDE8D5291963E700305B1A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNoticiaisPostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		C4DDE8C329195E6800305B1A /* SoccerNews */ = {
 			isa = PBXGroup;
 			children = (
+				C4DDE8D7291963EB00305B1A /* Models */,
 				C4DDE8C629195E6800305B1A /* HomeView.swift */,
 				C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */,
 				C4DDE8C829195E6E00305B1A /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				C4DDE8CB29195E6E00305B1A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4DDE8D7291963EB00305B1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDE8D5291963E700305B1A /* Post.swift */,
+				C4DDE8D82919643A00305B1A /* ApiNoticiaisPostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DDE8D6291963E700305B1A /* Post.swift in Sources */,
 				C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */,
+				C4DDE8D92919643A00305B1A /* ApiNoticiaisPostData.swift in Sources */,
 				C4DDE8C529195E6800305B1A /* SoccerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
