@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41A01A5291A834200683F1B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41A01A4291A834200683F1B /* DetailView.swift */; };
+		C41A01A7291A868600683F1B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41A01A6291A868600683F1B /* WebView.swift */; };
 		C4DDE8C529195E6800305B1A /* SoccerNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */; };
 		C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8C629195E6800305B1A /* HomeView.swift */; };
 		C4DDE8C929195E6E00305B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DDE8C829195E6E00305B1A /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41A01A4291A834200683F1B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C41A01A6291A868600683F1B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C4DDE8C129195E6800305B1A /* SoccerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerNewsApp.swift; sourceTree = "<group>"; };
 		C4DDE8C629195E6800305B1A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41A01A3291A82CA00683F1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDE8C629195E6800305B1A /* HomeView.swift */,
+				C41A01A4291A834200683F1B /* DetailView.swift */,
+				C41A01A6291A868600683F1B /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C4DDE8B829195E6800305B1A = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C4DDE8D7291963EB00305B1A /* Models */,
-				C4DDE8C629195E6800305B1A /* HomeView.swift */,
+				C41A01A3291A82CA00683F1B /* Views */,
 				C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */,
 				C4DDE8C829195E6E00305B1A /* Assets.xcassets */,
 				C4DDE8CA29195E6E00305B1A /* Preview Content */,
@@ -158,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DDE8DB291967DD00305B1A /* HttpClient.swift in Sources */,
+				C41A01A7291A868600683F1B /* WebView.swift in Sources */,
 				C4DDE8D6291963E700305B1A /* News.swift in Sources */,
 				C4DDE8C729195E6800305B1A /* HomeView.swift in Sources */,
+				C41A01A5291A834200683F1B /* DetailView.swift in Sources */,
 				C4DDE8D92919643A00305B1A /* ApiNoticiaisNewsData.swift in Sources */,
 				C4DDE8DD29196E4B00305B1A /* NewsManager.swift in Sources */,
 				C4DDE8C529195E6800305B1A /* SoccerNewsApp.swift in Sources */,

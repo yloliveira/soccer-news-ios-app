@@ -22,8 +22,10 @@ struct HomeView: View {
           Text("Vasco da Gama").tag("vasco")
         }
         .onChange(of: selectedTeam, perform: self.onChangePickerValue)
-        List(newsManager.news) {
-          Text($0.title)
+        List(newsManager.news) { item in
+          NavigationLink(destination: DetailView(url: item.url)) {
+            Text(item.title)
+          }
         }
         .navigationBarTitle("SOCCER NEWS")
       }
