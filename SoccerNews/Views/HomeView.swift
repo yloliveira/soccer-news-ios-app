@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
-  @State var selectedTeam = "vasco"
+  let teams = [
+    Team(tag: "vasco", name: "Vasco da Gama"),
+    Team(tag: "botafogo", name: "Botafogo"),
+    Team(tag: "flamengo", name: "Flamengo"),
+    Team(tag: "fluminense", name: "Fluminense"),
+  ]
   
+  @State var selectedTeam = "vasco"
   @ObservedObject var newsManager = NewsManager()
   
   var body: some View {
     NavigationView {
       VStack {
         Picker("Selecione o seu time", selection: $selectedTeam) {
-          Text("Botafogo").tag("botafogo")
-          Text("Flamengo").tag("flamengo")
-          Text("Fluminense").tag("fluminense")
-          Text("Vasco da Gama").tag("vasco")
+          ForEach(teams) { team in
+            Text(team.name)
+          }
         }
         .onChange(of: selectedTeam, perform: self.onChangePickerValue)
         List(newsManager.news) { item in
