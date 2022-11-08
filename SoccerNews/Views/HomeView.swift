@@ -30,6 +30,8 @@ struct HomeView: View {
         List(newsManager.news) { item in
           NavigationLink(destination: DetailView(url: item.url)) {
             Text(item.title)
+              .lineLimit(2)
+              .truncationMode(.tail)
           }
         }
         .navigationBarTitle("SOCCER NEWS")
