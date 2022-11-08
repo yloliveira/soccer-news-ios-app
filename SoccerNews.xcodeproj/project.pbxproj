@@ -18,6 +18,7 @@
 		C4DDE8D92919643A00305B1A /* ApiNoticiaisNewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8D82919643A00305B1A /* ApiNoticiaisNewsData.swift */; };
 		C4DDE8DB291967DD00305B1A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8DA291967DD00305B1A /* HttpClient.swift */; };
 		C4DDE8DD29196E4B00305B1A /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDE8DC29196E4B00305B1A /* NewsManager.swift */; };
+		C4EE5572291AA17B00D60290 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EE5571291AA17B00D60290 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		C4DDE8D82919643A00305B1A /* ApiNoticiaisNewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNoticiaisNewsData.swift; sourceTree = "<group>"; };
 		C4DDE8DA291967DD00305B1A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		C4DDE8DC29196E4B00305B1A /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		C4EE5570291A9E7400D60290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C4EE5571291AA17B00D60290 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +78,13 @@
 		C4DDE8C329195E6800305B1A /* SoccerNews */ = {
 			isa = PBXGroup;
 			children = (
+				C4EE5570291A9E7400D60290 /* Info.plist */,
 				C4DDE8D7291963EB00305B1A /* Models */,
 				C41A01A3291A82CA00683F1B /* Views */,
 				C4DDE8C429195E6800305B1A /* SoccerNewsApp.swift */,
 				C4DDE8C829195E6E00305B1A /* Assets.xcassets */,
 				C4DDE8CA29195E6E00305B1A /* Preview Content */,
+				C4EE5571291AA17B00D60290 /* Launch Screen.storyboard */,
 			);
 			path = SoccerNews;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EE5572291AA17B00D60290 /* Launch Screen.storyboard in Resources */,
 				C4DDE8CC29195E6E00305B1A /* Preview Assets.xcassets in Resources */,
 				C4DDE8C929195E6E00305B1A /* Assets.xcassets in Resources */,
 			);
@@ -314,9 +320,10 @@
 				DEVELOPMENT_TEAM = QQWB99QMN6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,9 +350,10 @@
 				DEVELOPMENT_TEAM = QQWB99QMN6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
