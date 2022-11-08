@@ -33,7 +33,9 @@ struct HomeView: View {
           }
         }
         .navigationBarTitle("SOCCER NEWS")
+        .listStyle(PlainListStyle())
       }
+      .padding(.vertical)
     }.onAppear(perform: fetchNewsData)
   }
   
